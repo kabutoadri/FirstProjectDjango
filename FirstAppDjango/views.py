@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 
-# Remplacer 'myapp/index.html par le bon chemin
+# Le chemin de index est définis dans settings.py (DIRS)
 def my_view(request):
-    # View code here...
+    # fonction qui me retourne ma page html
     return render(request, 'index.html')

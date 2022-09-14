@@ -16,7 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 
+# Construction de l'URL avec indexation
 urlpatterns = [
+    # index de mon app
     path('FirstAppDjango/', include('FirstAppDjango.urls')),
+    # index de la page admin de django
     path('admin/', admin.site.urls),
 ]
