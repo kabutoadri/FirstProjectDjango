@@ -1,5 +1,9 @@
-from django.http import HttpResponse
+from django.shortcuts import render
 
 
-def index(request):
-    return HttpResponse("Hello, world. You're at the polls index.")
+# Remplacer 'myapp/index.html par le bon chemin
+def my_view(request):
+    # View code here...
+    return render(request, 'myapp/index.html', {
+        'foo': 'bar',
+    }, content_type='application/xhtml+xml')
