@@ -19,7 +19,7 @@ from django.urls import include, path
 # Construction de l'URL avec indexation
 urlpatterns = [
     # index de mon app
-    path('FirstAppDjango/', include('FirstAppDjango.urls')),
+    path('timeofpage/', include('TimeofPageApp.urls')),
     # index de la page admin de django
     path('admin/', admin.site.urls),
 ]
